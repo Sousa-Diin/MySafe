@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MySafy</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="src/ui/menu/smartphone/mainMenu.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+  <link rel="shortcut icon" type="image/jpg" href="favico.png"/>
+</head>
+
+<body>
+  
+  <main>
+    <header class="content-all-info-money">
+        <select id="months" name="months">  
+          <option value="jan">Janeiro</option>
+          <option value="fev">Fevereiro</option>
+          <option value="mar">Março</option>
+          <option value="abr">Abril</option>
+          <option value="mai">Maio</option>
+          <option value="jun">Junho</option>
+          <option value="jul">Julho</option>
+          <option value="ago">Agosto</option>
+          <option value="set">Setembro</option>
+          <option value="out">Outubro</option>
+          <option value="nov">Novembro</option>
+          <option value="dez">Dezembro</option>
+        </select>
+      <span id="label-saldo">Saldo Geral</span>
+      <div class="div-saldo">
+        <h3 id="saldo" class="tot_money saldo">R$50.749,55</h3>
+        <h2 id="hide-saldo"><i id="icon-saldo" class="bi bi-eye-slash"></i></h2>
+      </div>
+
+      <nav class="nav-active-passive">
+        <div id="container-active-money">
+          <i class="bi bi-arrow-up"></i>
+          <aside class="aside-arrow">
+            <p class="title-active">Receitas</p>
+            <p id="price-active" class=" price-active saldo" >R$ 3.907,00</p>
+          </aside>
+        </div>
+        <div id="container-passive-money">
+          <i class="bi bi-arrow-down"></i>
+          <aside class="aside-arrow">
+            <p class="title-passive">Despesas</p>
+            <p id="price-passive"class="price-passive saldo">-R$ 597,00</p>
+          </aside>
+        </div>
+      </nav>
+    </header>
+    <section id="scena-all-info" class="content-all-info">
+      <div class="container-global-invest">
+        <span class="title">Investimentos</span>
+        <section id="cart-financy">
+          <section class="son-invest">
+            <img src="https://www.fabasa.com.br/wp-content/uploads/2021/12/Reserva-Financeira.jpg" alt="image que de reserva de emergência" class="img-invest">
+            <div class="side-info-invest">
+              <p class="title-invest">Reserva Financeira</p>
+              <p class="price-invest saldo">R$ 800,00</p> 
+            </div>
+          </section>
+          <section class="son-invest">
+            <img src="https://thumbs.dreamstime.com/b/finan%C3%A7a-opera%C3%A7%C3%A3o-banc%C3%A1ria-conta-de-dinheiro-da-economia-mealheiro-cor-rosa-na-pilha-111529723.jpg?w=768" alt="imagem de finanças pessoais" class="img-invest">
+            <div class="side-info-invest">
+              <p class="title-invest">Clear Name</p>
+              <p class="price-invest">R$ 500,00</p>
+            </div>
+          </section>
+          <section class="son-invest">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz1df5Q1iT7j-7dlZP0kiXsXV7eGaDxIp-Wg&usqp=CAU" alt="image de casamento" class="img-invest">
+            <div class="side-info-invest">
+              <p class="title-invest">Marrige</p>
+              <p class="price-invest">R$ 150,00</p>
+            </div>
+          </section>
+          <section class="son-invest">
+            <img src="https://cdn.houseplansservices.com/content/oanrn2hpo2onko9gr94416qock/w991x660.jpg?v=10" alt="image de casa moderna" class="img-invest">
+            <div class="side-info-invest">
+              <p class="title-invest">My House</p>
+              <p class="price-invest">R$ 100,00</p>
+            </div>
+          </section>
+          <section class="footer-bill">
+            <aside class="tot-bills"><span>Total</span><p>R$1.550,00</p></aside>
+            <div class="btn-add-bill btn">
+              <h3 class="btn"><i class=" btn bi bi-plus-lg"></i></h3>
+            </div>
+          </section>
+        </section>
+        
+      </div>
+      <div class="son-bills">
+       <span class="title">Gastos por categoria</span>
+       <section id="cart-bills"></section>
+      </div>
+    </section>
+  </main>
+  <footer id="openSideBar">
+    <section id="footerBar">      
+      <ul class="menu-item">
+        <li id="openMenu"><h2><i class="bi bi-house-door"></i></h2><span class="link">Menu</span></li>
+        <li id="openTransations"><h2><i class="bi bi-list-ul"></i></h2><span class="link">Transações</span></li>
+      </ul>
+      <ul class="menu-item">
+        <li id="openPlanning"><h2><i class="bi bi-align-start"></i></h2><labe class="link">Planejamento</span></li>
+        <li id="openMore"><h2><i class="bi bi-three-dots"></i></h2><span class="link">More</span></li>
+      </ul>
+
+      <button id="btn-plus"><h1><i class="bi bi-command"></i></h1></button>
+      <button id="btn-close"><i class="bi bi-x-lg"></i></button>      
+    </section
+  </footer>
+  <div id="iDBackground" class="hidden">
+    <section id="IdAboveBackGraound" class="classAboveBackGraound">
+      <article class="listBtnMain" >
+        <div class="row wd-40">
+          <h2 id="goToRevenue"><i class="bi bi-graph-up-arrow"></i></h2>
+          <h2 id="goToBank"><i class="bi bi-bank"></i></h2>
+        </div>
+        <div class="row wd-60">
+           <h2 id="goToCreditCard"><i class="bi bi-credit-card"></i></h2>
+           <h2 id="goToSpending"><i class="bi bi-graph-down-arrow"></i></h2>
+        </div
+        <div class="div-btnClose-float-menu" ><h2 class="btnClose" ><i class="bi bi-x-lg" id="exitMainMenu" ></i></h2</div>
+      </article>
+    </section>
+  </div>
+  
+  <script src="https://unpkg.com/notie"></script>
+  <script src="src/data/services/service.js" type="text/javascript"></script>
+  <script src="src/ui/windows/renderScreenDownUp.js" type="text/javascript"></script>
+  <script src="src/data/safyBank/Agency.js" type="text/javascript"></script>
+  <script src="src/data/services/Data.js" type="text/javascript"></script>
+  <script src="src/data/Register/Bill.js" type="text/javascript"></script>
+  <script src="main.js" type="text/javascript"></script>
+</body> 
+</html>

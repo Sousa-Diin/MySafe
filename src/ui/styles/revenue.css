@@ -1,0 +1,49 @@
+:root {
+  --color-primary: #3d5a80;
+  --color-secondary: #98c1d9;
+  --color-danger: #ff5b5b;
+  --white-gradient-1: #ffffff;
+  --white-gradient-2: #f9f9f9;
+  --white-gradient-3: #f0f0f0;
+  --white-gradient-4: #e5e5e5;
+  --black-gradient-1: #000000;
+  --color-success: #198754;
+  --color-success-light: #4dd383;
+  --color-success-dark: #0b472b;
+}
+
+@media only screen and (min-width: 290px) and (max-width: 768px) {
+  #header-nav-spend {
+    background-color: var(--color-success);
+  }
+
+  #input-spend-value {
+    background-color: var(--color-success);
+  }
+
+  #btn-plus-revenue {
+    background-color: var(--color-success);
+    margin: 1rem 9.3rem;
+    bottom: 10px;
+    border: none;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    padding: 0.5rem;
+    color: var(--white-gradient-2);
+    /* box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.35); */
+    box-shadow: 0px 3px 15px -1px rgba(0, 0, 0, 0.3),
+      0px 6px 10px 0px rgba(0, 0, 0, 0.2), 0px 1px 18px 0px rgba(0, 0, 0, 0.3);
+    transition: all 100ms linear 0s, background-color 0ms ease 0s;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+  }
+
+  #btn-plus-revenue:hover {
+    width: 63px;
+    height: 63px;
+    color: #f71818;
+    transform: rotate(45deg);
+  }
+}

@@ -150,8 +150,6 @@ const rederPatge = pg => pg === 'spend' ? showSpendPage() : showRevenuePage();
 function deploy(run) {
   if (run) {
     handleButtonsClick();
-    //showRevenuePage();
-    showSpendPagee();
 
     /* TESTE DAS FUNÇÕES E ENUM - 09/01/2024  */
     const toDay = new Data();

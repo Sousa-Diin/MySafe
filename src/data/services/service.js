@@ -55,9 +55,11 @@ function showAlert(message, kind, duration, _position) {
   });
 }
 
-function salvarListInput ( list, array ) {
+function salvarListInput ( list, array, auth ) {
   setLocalStorage(list, array);
-  showAlert("Dados inseridos com sucesso", 1, 1, 'top');
+  if ( auth ) {
+    showAlert("Dados inseridos com sucesso", 1, 1, 'top');
+  }
 }
 
 function renderCalculatorOnScreen(cb) {
@@ -127,13 +129,12 @@ function getClickPushbutton(btn) {
   listEntrace = getLocalStorage('listInput');
   listEntrace = insertDataCalculator (btn);
 
-  input.value = '/ * - + . =';
-  input.value = listEntrace.toString();
+  input.value = listEntrace.toString().split(',').join('');
   console.log(typeof listEntrace);
  
   console.log("click do button => ", listEntrace);
   //alert("Calc click", btn);
-  salvarListInput('listInput', listEntrace);
+  salvarListInput('listInput', listEntrace, false);
 }
 const listenButtons = () => {
   document
@@ -146,12 +147,12 @@ function eraseInputField() {
 
   if (recevelistInput) {
     recevelistInput.pop();
-    document.getElementById("resultCalculator").value = recevelistInput;
+    document.getElementById("resultCalculator").value = recevelistInput.toString().split(',').join('');
   }else{
     document.getElementById("resultCalculator").value = "0.0";
   }
   
-  salvarListInput('listInput', recevelistInput);
+  salvarListInput('listInput', recevelistInput, false);
 }
 
 function insertDataCalculator (char) {
@@ -169,7 +170,7 @@ function insertDataCalculator (char) {
     setLocalStorage('listInput', listEntrace);
   }
 
-  salvarListInput('listInput', listInput);
+  salvarListInput('listInput', listInput, false);
 
 }
 

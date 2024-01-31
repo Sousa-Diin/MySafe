@@ -90,6 +90,7 @@ const handleButtonsClick = () => {
     .addEventListener("click", async () => {
       await notie.alert({ text: "Going to Spending", type: 3, time: 2 });
       window.location.pathname = "src/pages/spend.html";
+      window.location.href = "";
     });
 
   document
@@ -139,12 +140,21 @@ function hideSplashScreen() {
   }
 }
 
+const showRevenuePage = () => document.body.appendChild(revenuePage);
+
+const showSpendPage = () => document.body.appendChild(spendPage);
+
+const rederPatge = pg => pg === 'spend' ? showSpendPage() : showRevenuePage();
+
+
 function deploy(run) {
   if (run) {
     handleButtonsClick();
+    //showRevenuePage();
+    showSpendPagee();
 
     /* TESTE DAS FUNÇÕES E ENUM - 09/01/2024  */
-    const toDay = new Data(14, 02, 1995);
+    const toDay = new Data();
     console.log(toDay.getData());
     toDay.setData(21, 11, 2024);
     console.log(toDay.getData());
